@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 
-/* parent part */
+/* parent */
 #main-div
 {
     max-width: 1000px;
@@ -12,9 +12,9 @@ body{
     margin: 0 auto;
 }
 
-/* Header part */
+/* Header */
 #mypage-header{
-    height: 100px;
+    min-height: 100px;
     color: white;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ body{
     background-color: rgb(145, 3, 3);
 }
 
-/* Body part */
+/* center content */
 #mypage-body{
     display: flex;
     flex-direction: column;
@@ -55,14 +55,13 @@ body{
     color: rgb(145, 3, 3);
 }
 .center-content-headers{
-    font-size: medium;
     color: rgb(145, 3, 3);   
 }
 .center-content{
     padding-left: 25px;
 }
 
-/* Footer part */
+/* Footer */
 #mypage-footer{
     min-height: 100px;
     display: flex;
@@ -89,6 +88,12 @@ body{
 
 /* This is from small screan view */
 @media (max-width: 576px) {
+    /* header */
+    #header-name{
+        font-size: 26px;
+    }
+
+    /* center content */
     .mypage-content{
         flex-direction: column;
     }
@@ -98,9 +103,6 @@ body{
     }
     .mypage-leftnav{
         border-right: none;
-    }
-    #header-name{
-        font-size: 26px;
     }
     .leftnav-names{
         font-size: 20px;
