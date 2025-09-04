@@ -16,10 +16,12 @@ body{
 #mypage-header{
     min-height: 100px;
     color: white;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(145, 3, 3);
+    background-color: #6e6e68;
 }
 
 /* center content */
@@ -27,35 +29,33 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: rgb(251, 248, 248);
+    background-color: lightgray;
     padding: 20px 20px 20px 10px;
 }
 .mypage-content{
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 .mypage-leftnav{
-    border-right: green solid 1px;
+    border-left: #6e6e68 solid 1px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 .mypage-center-content{
-    border-left: orange solid 1px;
+    border-right: #6e6e68 solid 1px;
     flex: 3;
     display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
     align-items: center;
     line-height: 1.6;
-    padding-left: 3px;
+    padding:10px 20px;
 }
 .leftnav-names{
     text-align: center;
-    color: rgb(145, 3, 3);
-}
-.center-content-headers{
-    color: rgb(145, 3, 3);   
 }
 .center-content{
     padding-left: 25px;
@@ -69,7 +69,7 @@ body{
     align-items: center;
     gap: 15px;
     color: white;
-    background-color: rgb(145, 3, 3);
+    background-color: #6e6e68;
 }
 #footer-title{
     font-weight: 600;
@@ -98,17 +98,16 @@ body{
         flex-direction: column;
     }
     .mypage-center-content{
-        border-left: none;
+        border-right: none;
         font-size: small;
     }
     .mypage-leftnav{
-        border-right: none;
+        border-left: none;
     }
     .leftnav-names{
         font-size: 20px;
     }
     .center-content-headers{
-        font-size: 15px;
-        color: rgb(145, 3, 3);   
+        font-size: 15px; 
     }
 }
