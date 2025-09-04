@@ -3,12 +3,16 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+
+/* parent part */
 #main-div
 {
     max-width: 1000px;
     letter-spacing: 0.5px;
     margin: 0 auto;
 }
+
+/* Header part */
 #mypage-header{
     height: 100px;
     color: white;
@@ -17,16 +21,18 @@ body{
     align-items: center;
     background-color: rgb(145, 3, 3);
 }
+
+/* Body part */
 #mypage-body{
     display: flex;
     flex-direction: column;
     gap: 30px;
     background-color: rgb(251, 248, 248);
-    padding: 20px;
-    padding-left: 10px;
+    padding: 20px 20px 20px 10px;
 }
 .mypage-content{
     display: flex;
+    flex-wrap: wrap;
 }
 .mypage-leftnav{
     border-right: green solid 1px;
@@ -56,6 +62,7 @@ body{
     padding-left: 25px;
 }
 
+/* Footer part */
 #mypage-footer{
     min-height: 100px;
     display: flex;
@@ -80,9 +87,9 @@ body{
     gap: 15px;
 }
 
+/* This is from small screan view */
 @media (max-width: 576px) {
     .mypage-content{
-        display: flex;
         flex-direction: column;
     }
     .mypage-center-content{
