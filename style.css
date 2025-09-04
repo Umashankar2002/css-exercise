@@ -1,10 +1,13 @@
+/* =================================
+   section: Global reset
+   ================================= */
 body{
     margin: 20px;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* parent */
+
 #main-div
 {
     max-width: 1000px;
@@ -12,7 +15,9 @@ body{
     margin: 0 auto;
 }
 
-/* Header */
+/* =================================
+   section: Header style
+   ================================= */
 #mypage-header{
     min-height: 100px;
     color: white;
@@ -24,11 +29,13 @@ body{
     background-color: #6e6e68;
 }
 
-/* center content */
+/* =================================
+   section: Center page style
+   ================================= */
 #mypage-body{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     background-color: lightgray;
     padding: 20px 20px 20px 10px;
 }
@@ -37,12 +44,26 @@ body{
     flex-direction: row-reverse;
     flex-wrap: wrap;
 }
+/* =================================
+   section: Left navigation style
+   ================================= */
 .mypage-leftnav{
     border-left: #6e6e68 solid 1px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.leftnav-names{
+    text-align: center;
+}
+
+/* ===================================
+   section: center content page style
+   =================================== */
+.center-content{
+    padding-left: 25px;
 }
 .mypage-center-content{
     border-right: #6e6e68 solid 1px;
@@ -54,14 +75,10 @@ body{
     line-height: 1.6;
     padding:10px 20px;
 }
-.leftnav-names{
-    text-align: center;
-}
-.center-content{
-    padding-left: 25px;
-}
 
-/* Footer */
+/* =================================
+   section: Footer style
+   ================================= */
 #mypage-footer{
     min-height: 100px;
     display: flex;
@@ -86,14 +103,21 @@ body{
     gap: 15px;
 }
 
-/* This is from small screan view */
+/* =================================
+   section: Responsive page style
+   ================================= */
 @media (max-width: 576px) {
-    /* header */
+    
+    /* =================================
+   section: Header style
+   ================================= */
     #header-name{
         font-size: 26px;
     }
 
-    /* center content */
+    /* =================================
+   section: Center page style
+   ================================= */
     .mypage-content{
         flex-direction: column;
     }
